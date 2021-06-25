@@ -59,5 +59,4 @@ class VSRData(data.Dataset):
         return torch.from_numpy(blurs), torch.from_numpy(sharp), torch.from_numpy(kernels)
 
     def __len__(self):
-
-            return self.num_image
+        return self.num_image
