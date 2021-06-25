@@ -42,7 +42,7 @@ class VSRData(data.Dataset):
         image_names_blur = sorted(glob.glob(os.path.join(self.dir_image_blur, "*")))
         image_names_gt   = sorted(glob.glob(os.path.join(self.dir_image_gt, "*")))
         image_names_kernel = sorted(glob.glob(os.path.join(self.dir_image_kernel, "*")))
-        return image_names_blur, image_names_gt, image_names_kernel
+        return image_names_gt, image_names_blur, image_names_kernel
 
     def _load(self):
 
